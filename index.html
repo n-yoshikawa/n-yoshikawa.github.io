@@ -1,60 +1,65 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Naruki Yoshikawa</title>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout">
-      <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Naruki Yoshikawa</h4>
-                A graduate student at <a href="http://www.tsudalab.org/en/">Tsuda laboratory</a>, The University of Tokyo.
-                <ul>
-                    <li>E-mail: naruki-yoshikawa [at] g.ecc.u-tokyo.ac.jp</li>
-                    <li>GitHub: <a href="https://github.com/n-yoshikawa">n-yoshikawa</a>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Projects</h4>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Fast, Efficient Fragment-Based Coordinate Generation (Google Summer of Code 2018)</h5>
+  <body>
+    <section class="hero is-link">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Naruki Yoshikawa</h1>
+          <h2 class="subtitle">
+            A graduate student at <a href="http://www.tsudalab.org/en/">Tsuda laboratory</a>, The University of Tokyo.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h3 class="title is-4 is-spaced">Basic information</h3>
+        <div class="content">
+          <ul>
+            <li>E-mail: naruki-yoshikawa [at] g.ecc.u-tokyo.ac.jp</li>
+            <li>GitHub: <a href="https://github.com/n-yoshikawa">n-yoshikawa</a></li>
+            <li>Google Scholar: <a href="https://scholar.google.co.jp/citations?user=qRhc2PwAAAAJ">Naruki Yoshikawa</a></li>
+            <li>ORCID: <a href="https://orcid.org/0000-0003-1546-8709">0000-0003-1546-8709</a></li>
+          </ul>
+        </div>
+        <hr>
+        <h3 class="title is-4">Projects</h3>
+        <div class="columns">
+          <div class="column">
+            <div class="card bm--card-equal-height">
+              <header class="card-header">
+                <p class="card-header-title">
+                Fast, Efficient Fragment-Based Coordinate Generation (Google Summer of Code 2018)
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
                   <p>The goal of this project is a improvement of Open Babel. Open Babel is a tool to convert formats which store information of molecules. We need to predict coordinates of atoms when we translate a format which does not include 3D coordinate information into a format which requires it. The goal of this project is to replace the current rule-based coordinate prediction method with a fragment-based one. We can expect speed up of conversion by this project. It will help chemists who need to deal with a lot of molecule information.</p>
                   <ul>
-                      <li><a href="https://summerofcode.withgoogle.com/projects/#5029822145757184">Project page </a></li>
+                    <li><a href="https://summerofcode.withgoogle.com/projects/#5029822145757184">Project page </a></li>
+                  </ul>
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>ChemGE: Population-based de novo molecule generation using grammatical evolution</h5>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card bm--card-equal-height">
+              <header class="card-header">
+                <p class="card-header-title">
+                ChemGE: Population-based de novo molecule generation using grammatical evolution
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
                   <p>Automatic design with machine learning 
                   and molecular simulations has shown remarkable ability 
                   to generate new and promising drug candidates.
@@ -72,46 +77,57 @@
                   ChemGE succeeded in generating hundreds of high-affinity molecules 
                   whose diversity is better than that of known binding molecules in DUD-E.</p>
                   <ul>
-                      <li><a href="https://doi.org/10.1246/cl.180665">Paper</a> (Accepter by Chemistry Letters)</li>
-                      <li><a href="/pdf/chemge-acs.pdf">Poster</a> (Presented at 256th ACS National Meeting)</li>
-                      <li><a href="https://github.com/tsudalab/ChemGE">GitHub</a></li>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                    <h5>Combining probabilistic alignments with read pair information improves accuracy of split-alignments</h5>
-                    <p>Split-alignments provide base-pair-resolution evidence of genomic rearrangements.
-                    In practice, they are found by first computing high-scoring local alignments, parts of which are then combined into a split-alignment.
-                    This approach is challenging when aligning a short read to a large and repetitive reference, as it tends to produce many spurious local alignments leading to ambiguities in identifying the correct split-alignment.
-                    This problem is further exacerbated by the fact that rearrangements tend to occur in repeat-rich regions.</p>
-                    <p>We propose a split-alignment technique that combats the issue of ambiguous alignments by combining information from probabilistic alignment with positional information from paired-end reads. 
-                    We demonstrate that our method finds accurate split-alignments, and that this translates into improved performance of variant-calling tools that rely split-alignments.</p>
-                    <ul>
-                      <li><a href="http://dx.doi.org/10.1093/bioinformatics/bty398">Paper</a> (Accepted by Bioinformatics)</li>
-                      <li><a href="/pdf/apbc2018.pdf">Poster</a> (Presented at APBC 2018)</li>
-                    </ul>
+                    <li><a href="https://doi.org/10.1246/cl.180665">Paper</a> (Accepter by Chemistry Letters)</li>
+                    <li><a href="/pdf/chemge-acs.pdf">Poster</a> (Presented at 256th ACS National Meeting)</li>
+                    <li><a href="https://github.com/tsudalab/ChemGE">GitHub</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Publications</h4>
-                <h5>Papers</h5>
-                <ul>
-                  <li><u>Naruki Yoshikawa</u>, Kei Terayama, Masato Sumita, Teruki Homma, Kenta Oono, and Koji Tsuda. <a href="https://doi.org/10.1246/cl.180665">Population-based De Novo Molecule Generation, Using Grammatical Evolution.</a> Chemistry Letters, 2018.</li>
-                  <li>Anish MS Shrestha, <u>Naruki Yoshikawa</u>, and Kiyoshi Asai. <a href="http://dx.doi.org/10.1093/bioinformatics/bty398">Combining probabilistic alignments with read pair information improves accuracy of split-alignments.</a> Bioinformatics, 2018.</li>
-                </ul>
-                <h5>Presentations</h5>
-                <ul>
-                  <li><u>Naruki Yoshikawa</u>, Kei Terayama, Masato Sumita, Teruki Homma, Kenta Oono, and Koji Tsuda <a href="/pdf/chemge-acs.pdf">Population-based de novo molecule generation, using grammatical evolution</a> (Poster Presentation at 256th ACS National Meeting)</li>
-                  <li><u>Naruki Yoshikawa</u>, Anish MS Shrestha, and Kiyoshi Asai. <a href="/pdf/apbc2018.pdf">Combining probabilistic alignments with read pair information improves accuracy of split-alignments</a> (Poster presentation at APBC 2018)</li>
-                </ul>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <div class="card bm--card-equal-height">
+              <header class="card-header">
+                <p class="card-header-title">
+                Combining probabilistic alignments with read pair information improves accuracy of split-alignments
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content">
+                  <p>Split-alignments provide base-pair-resolution evidence of genomic rearrangements.
+                  In practice, they are found by first computing high-scoring local alignments, parts of which are then combined into a split-alignment.
+                  This approach is challenging when aligning a short read to a large and repetitive reference, as it tends to produce many spurious local alignments leading to ambiguities in identifying the correct split-alignment.
+                  This problem is further exacerbated by the fact that rearrangements tend to occur in repeat-rich regions.</p>
+                  <p>We propose a split-alignment technique that combats the issue of ambiguous alignments by combining information from probabilistic alignment with positional information from paired-end reads. 
+                  We demonstrate that our method finds accurate split-alignments, and that this translates into improved performance of variant-calling tools that rely split-alignments.</p>
+                  <ul>
+                    <li><a href="http://dx.doi.org/10.1093/bioinformatics/bty398">Paper</a> (Accepted by Bioinformatics)</li>
+                    <li><a href="/pdf/apbc2018.pdf">Poster</a> (Presented at APBC 2018)</li>
+                  </ul>
                 </div>
               </div>
-          </section>
+            </div>
+          </div>
+          <div class="column">
+          </div>
         </div>
-      </main>
-    </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <hr>
+        <h3 class="title is-4 is-spaced">Publications</h3>
+        <h4 class="title is-5">Papers</h4>
+        <div class="content">
+          <ul>
+            <li><u>Naruki Yoshikawa</u>, Kei Terayama, Masato Sumita, Teruki Homma, Kenta Oono, and Koji Tsuda. <a href="https://doi.org/10.1246/cl.180665">Population-based De Novo Molecule Generation, Using Grammatical Evolution.</a> Chemistry Letters, 2018.</li>
+            <li>Anish MS Shrestha, <u>Naruki Yoshikawa</u>, and Kiyoshi Asai. <a href="http://dx.doi.org/10.1093/bioinformatics/bty398">Combining probabilistic alignments with read pair information improves accuracy of split-alignments.</a> Bioinformatics, 2018.</li>
+          </ul>
+          <h4 class="title is-5">Presentations</h4>
+          <ul>
+            <li><u>Naruki Yoshikawa</u>, Kei Terayama, Masato Sumita, Teruki Homma, Kenta Oono, and Koji Tsuda <a href="/pdf/chemge-acs.pdf">Population-based de novo molecule generation, using grammatical evolution</a> (Poster Presentation at 256th ACS National Meeting)</li>
+            <li><u>Naruki Yoshikawa</u>, Anish MS Shrestha, and Kiyoshi Asai. <a href="/pdf/apbc2018.pdf">Combining probabilistic alignments with read pair information improves accuracy of split-alignments</a> (Poster presentation at APBC 2018)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
