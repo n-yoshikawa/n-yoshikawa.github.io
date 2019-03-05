@@ -43,10 +43,16 @@
               </header>
               <div class="card-content">
                 <div class="content">
-                  <p>The goal of this project is a improvement of Open Babel. Open Babel is a tool to convert formats which store information of molecules. We need to predict coordinates of atoms when we translate a format which does not include 3D coordinate information into a format which requires it. The goal of this project is to replace the current rule-based coordinate prediction method with a fragment-based one. We can expect speed up of conversion by this project. It will help chemists who need to deal with a lot of molecule information.</p>
+                  <p>
+                  Rapidly predicting an accurate three dimensional geometry of a molecule is a crucial task in cheminformatics and a range of molecular modeling. Fast, accurate, and open implementation of structure prediction is necessary for reproducible cheminformatics research. We introduce fragment-based coordinate generation for Open Babel, a widely accepted open source toolkit for cheminformatics. The new implementation significant improves speed and stereochemical accuracy, while retaining or improving accuracy of bond lengths, bond angles, and dihedral torsions. We first separate an input molecule into fragments by cutting at rotatable bonds. Coordinates of fragments are set according to the fragment library, which is prepared from open crystallographic databases. Since coordinates of multiple atoms are decided at once, coordinate prediction is accelerated over the previous rules-based implementation or the widely-used distance geometry methods in RDKit. This new implementation will be beneficial for a wide range of applications, including computational property prediction in polymers, molecular materials and drug design.
+                  </p>
                   <ul>
                     <li><a href="https://summerofcode.withgoogle.com/projects/#5029822145757184">Project page </a></li>
+                    <li><a href="https://doi.org/10.26434/chemrxiv.7791947">ChemRxiv</a></li>
                   </ul>
+                  <figure class="image">
+                    <img src="figure/ob-fragment.jpg" alt="Fragment-based coordinate generation">
+                  </figure>
                 </div>
               </div>
             </div>
@@ -76,11 +82,15 @@
                   In docking experiments with thymidine kinase, 
                   ChemGE succeeded in generating hundreds of high-affinity molecules 
                   whose diversity is better than that of known binding molecules in DUD-E.</p>
+                  
                   <ul>
                     <li><a href="https://doi.org/10.1246/cl.180665">Paper</a> (Accepter by Chemistry Letters)</li>
                     <li><a href="/pdf/chemge-acs.pdf">Poster</a> (Presented at 256th ACS National Meeting)</li>
                     <li><a href="https://github.com/tsudalab/ChemGE">GitHub</a></li>
                   </ul>
+                  <figure class="image">
+                    <img src="figure/chemge.png" alt="ChemGE">
+                  </figure>
                 </div>
               </div>
             </div>
@@ -106,6 +116,9 @@
                     <li><a href="http://dx.doi.org/10.1093/bioinformatics/bty398">Paper</a> (Accepted by Bioinformatics)</li>
                     <li><a href="/pdf/apbc2018.pdf">Poster</a> (Presented at APBC 2018)</li>
                   </ul>
+                  <figure class="image">
+                    <img src="figure/last-split-pe.png" alt="LAST-SPLIT-PE">
+                  </figure>
                 </div>
               </div>
             </div>
