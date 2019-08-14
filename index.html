@@ -65,7 +65,7 @@
 <p>Rapidly predicting an accurate three dimensional geometry of a molecule is a crucial task in cheminformatics and a range of molecular modeling. Fast, accurate, and open implementation of structure prediction is necessary for reproducible cheminformatics research. We introduce fragment-based coordinate generation for Open Babel, a widely accepted open source toolkit for cheminformatics. The new implementation significant improves speed and stereochemical accuracy, while retaining or improving accuracy of bond lengths, bond angles, and dihedral torsions. We first separate an input molecule into fragments by cutting at rotatable bonds. Coordinates of fragments are set according to the fragment library, which is prepared from open crystallographic databases. Since coordinates of multiple atoms are decided at once, coordinate prediction is accelerated over the previous rules-based implementation or the widely-used distance geometry methods in RDKit. This new implementation will be beneficial for a wide range of applications, including computational property prediction in polymers, molecular materials and drug design.</p>
                   <ul>
                     <li><a href="https://summerofcode.withgoogle.com/archive/2018/projects/5957928301363200/">Project page</a></li>
-                    <li><a href="https://doi.org/10.26434/chemrxiv.7791947">ChemRxiv</a></li>
+                    <li><a href="https://doi.org/10.1186/s13321-019-0372-5">Paper</a> (Published from Journal of Cheminformatics)</li>
                   </ul>
                   <figure class="image">
                     <img src="figure/ob-fragment.jpg" alt="Fragment-based coordinate generation">
@@ -88,7 +88,7 @@
 <p>Automatic design with machine learning and molecular simulations has shown remarkable ability to generate new and promising drug candidates. Current models, however, still have problems in simulation concurrency and molecular diversity.  Most methods generate one molecule at a time and do not allow multiple simulators to run simultaneously. Also, better molecular diversity would help to increase the chance of survival in the subsequent drug discovery process. We propose a new population-based approach using grammatical evolution named ChemGE.</p>
 <p>In our method, a large population of molecules are updated concurrently and evaluated by multiple simulators in parallel. In docking experiments with thymidine kinase, ChemGE succeeded in generating hundreds of high-affinity molecules whose diversity is better than that of known binding molecules in DUD-E.</p>
                   <ul>
-                    <li><a href="https://doi.org/10.1246/cl.180665">Paper</a> (Accepter by Chemistry Letters)</li>
+                    <li><a href="https://doi.org/10.1246/cl.180665">Paper</a> (Published from Chemistry Letters)</li>
                     <li><a href="pdf/chemge-acs.pdf">Poster</a> (Presented at 256th ACS National Meeting)</li>
                     <li><a href="https://github.com/tsudalab/ChemGE">GitHub</a></li>
                   </ul>
@@ -111,7 +111,7 @@
 <p>Split-alignments provide base-pair-resolution evidence of genomic rearrangements. In practice, they are found by first computing high-scoring local alignments, parts of which are then combined into a split-alignment. This approach is challenging when aligning a short read to a large and repetitive reference, as it tends to produce many spurious local alignments leading to ambiguities in identifying the correct split-alignment. This problem is further exacerbated by the fact that rearrangements tend to occur in repeat-rich regions.</p>
 <p>We propose a split-alignment technique that combats the issue of ambiguous alignments by combining information from probabilistic alignment with positional information from paired-end reads. We demonstrate that our method finds accurate split-alignments, and that this translates into improved performance of variant-calling tools that rely split-alignments.</p>
                   <ul>
-                    <li><a href="https://doi.org/10.1093/bioinformatics/bty398">Paper</a> (Accepted by Bioinformatics)</li>
+                    <li><a href="https://doi.org/10.1093/bioinformatics/bty398">Paper</a> (Published from Bioinformatics)</li>
                     <li><a href="pdf/apbc2018.pdf">Poster</a> (Presented at APBC 2018)</li>
                   </ul>
                   <figure class="image">
@@ -127,8 +127,9 @@
         <h4 class="title is-5">Papers</h4>
         <div class="content">
           <ul>
-            <li><u>Naruki Yoshikawa</u>, Kei Terayama, Masato Sumita, Teruki Homma, Kenta Oono, and Koji Tsuda. <a href="https://doi.org/10.1246/cl.180665">Population-based De Novo Molecule Generation, Using Grammatical Evolution.</a> Chemistry Letters, 2018.</li>
-            <li>Anish MS Shrestha, <u>Naruki Yoshikawa</u>, and Kiyoshi Asai. <a href="https://doi.org/10.1093/bioinformatics/bty398">Combining probabilistic alignments with read pair information improves accuracy of split-alignments.</a> Bioinformatics, 2018.</li>
+            <li><u>Naruki Yoshikawa</u> and Geoffrey R. Hutchison. <a href="https://doi.org/10.1186/s13321-019-0372-5">Fast, Efficient Fragment-Based Coordinate Generation for Open Babel</a>. Journal of Cheminformatics, 2019.</li>
+            <li><u>Naruki Yoshikawa</u>, Kei Terayama, Masato Sumita, Teruki Homma, Kenta Oono, and Koji Tsuda. <a href="https://doi.org/10.1246/cl.180665">Population-based De Novo Molecule Generation, Using Grammatical Evolution</a>. Chemistry Letters, 2018.</li>
+            <li>Anish MS Shrestha, <u>Naruki Yoshikawa</u>, and Kiyoshi Asai. <a href="https://doi.org/10.1093/bioinformatics/bty398">Combining probabilistic alignments with read pair information improves accuracy of split-alignments</a>. Bioinformatics, 2018.</li>
           </ul>
           <h4 class="title is-5">Presentations</h4>
           <ul>
