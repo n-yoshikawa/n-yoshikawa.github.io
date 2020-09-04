@@ -5,122 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Naruki Yoshikawa</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" integrity="sha256-aan9tQnm7lVach/6JxYyrQRlheajRD+UBDwwWo3tAHQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <section class="hero is-link">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Naruki Yoshikawa</h1>
-          <h2 class="subtitle">
-            A graduate student at <a href="http://www.tsudalab.org/en/">Tsuda laboratory</a>, The University of Tokyo.
-          </h2>
+    <nav class="navbar is-light py-1" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <h1 class="title is-4 navbar-item">Naruki Yoshikawa</h1>
         </div>
       </div>
-    </section>
+    </nav>
     <section class="section">
       <div class="container">
         <h3 class="title is-4 is-spaced">Basic information</h3>
         <div class="content">
           <ul>
-            <li>E-mail: naruki-yoshikawa [at] g.ecc.u-tokyo.ac.jp</li>
+            <li>E-mail: naruki.yoshikawa [at] mail.utoronto.ca</li>
             <li>GitHub: <a href="https://github.com/n-yoshikawa">n-yoshikawa</a></li>
             <li>Google Scholar: <a href="https://scholar.google.co.jp/citations?user=qRhc2PwAAAAJ">Naruki Yoshikawa</a></li>
             <li>ORCID: <a href="https://orcid.org/0000-0003-1546-8709">0000-0003-1546-8709</a></li>
           </ul>
         </div>
         <hr>
-        <h3 class="title is-4">Projects</h3>
-        <div class="columns">
-          <div class="column">
-            <div class="card bm--card-equal-height">
-              <header class="card-header">
-                <p class="card-header-title">
-                More Improved Coordinate Generation for Open Babel: Combining Fragment-based Method and Distance Geometry (Google Summer of Code 2019)
-                </p>
-              </header>
-              <div class="card-content">
-                <div class="content">
-<p>Open Babel is a widely used open source toolkit for cheminformatics. One of its important functions is 3D structure prediction of input molecules. Open Babel's coordinate generation function was improved in speed and stereochemical accuracy by the new fragment-based coordinate generation method implemented as a GSoC 2018 project. However, the stereochemistry accuracy is not as high as the distance geometry method of RDKit.</p>
-<p>In this project, I will improve the coordinate generation of Open Babel by implementing a new method which combines the fragment-based method of Open Babel and the distance geometry method of RDKit. This new implementation is expected to be faster than current RDKit and more accurate in stereochemistry than current Open Babel. Implementing a better prediction method could be beneficial for a wide range of applications such as drug design.</p>
-                  <ul>
-                    <li><a href="https://summerofcode.withgoogle.com/projects/5547940045651968">Project page</a></li>
-                  </ul>
-                  <figure class="image">
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card bm--card-equal-height">
-              <header class="card-header">
-                <p class="card-header-title">
-                Fast, Efficient Fragment-Based Coordinate Generation (Google Summer of Code 2018)
-                </p>
-              </header>
-              <div class="card-content">
-                <div class="content">
-<p>Rapidly predicting an accurate three dimensional geometry of a molecule is a crucial task in cheminformatics and a range of molecular modeling. Fast, accurate, and open implementation of structure prediction is necessary for reproducible cheminformatics research. We introduce fragment-based coordinate generation for Open Babel, a widely accepted open source toolkit for cheminformatics. The new implementation significant improves speed and stereochemical accuracy, while retaining or improving accuracy of bond lengths, bond angles, and dihedral torsions. We first separate an input molecule into fragments by cutting at rotatable bonds. Coordinates of fragments are set according to the fragment library, which is prepared from open crystallographic databases. Since coordinates of multiple atoms are decided at once, coordinate prediction is accelerated over the previous rules-based implementation or the widely-used distance geometry methods in RDKit. This new implementation will be beneficial for a wide range of applications, including computational property prediction in polymers, molecular materials and drug design.</p>
-                  <ul>
-                    <li><a href="https://summerofcode.withgoogle.com/archive/2018/projects/5957928301363200/">Project page</a></li>
-                    <li><a href="https://doi.org/10.1186/s13321-019-0372-5">Paper</a> (Published from Journal of Cheminformatics)</li>
-                  </ul>
-                  <figure class="image">
-                    <img src="figure/ob-fragment.jpg" alt="Fragment-based coordinate generation">
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column">
-            <div class="card bm--card-equal-height">
-              <header class="card-header">
-                <p class="card-header-title">
-                ChemGE: Population-based de novo molecule generation using grammatical evolution
-                </p>
-              </header>
-              <div class="card-content">
-                <div class="content">
-<p>Automatic design with machine learning and molecular simulations has shown remarkable ability to generate new and promising drug candidates. Current models, however, still have problems in simulation concurrency and molecular diversity.  Most methods generate one molecule at a time and do not allow multiple simulators to run simultaneously. Also, better molecular diversity would help to increase the chance of survival in the subsequent drug discovery process. We propose a new population-based approach using grammatical evolution named ChemGE.</p>
-<p>In our method, a large population of molecules are updated concurrently and evaluated by multiple simulators in parallel. In docking experiments with thymidine kinase, ChemGE succeeded in generating hundreds of high-affinity molecules whose diversity is better than that of known binding molecules in DUD-E.</p>
-                  <ul>
-                    <li><a href="https://doi.org/10.1246/cl.180665">Paper</a> (Published from Chemistry Letters)</li>
-                    <li><a href="pdf/chemge-acs.pdf">Poster</a> (Presented at 256th ACS National Meeting)</li>
-                    <li><a href="https://github.com/tsudalab/ChemGE">GitHub</a></li>
-                  </ul>
-                  <figure class="image">
-                    <img src="figure/chemge.png" alt="ChemGE">
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card bm--card-equal-height">
-              <header class="card-header">
-                <p class="card-header-title">
-                Combining probabilistic alignments with read pair information improves accuracy of split-alignments
-                </p>
-              </header>
-              <div class="card-content">
-                <div class="content">
-<p>Split-alignments provide base-pair-resolution evidence of genomic rearrangements. In practice, they are found by first computing high-scoring local alignments, parts of which are then combined into a split-alignment. This approach is challenging when aligning a short read to a large and repetitive reference, as it tends to produce many spurious local alignments leading to ambiguities in identifying the correct split-alignment. This problem is further exacerbated by the fact that rearrangements tend to occur in repeat-rich regions.</p>
-<p>We propose a split-alignment technique that combats the issue of ambiguous alignments by combining information from probabilistic alignment with positional information from paired-end reads. We demonstrate that our method finds accurate split-alignments, and that this translates into improved performance of variant-calling tools that rely split-alignments.</p>
-                  <ul>
-                    <li><a href="https://doi.org/10.1093/bioinformatics/bty398">Paper</a> (Published from Bioinformatics)</li>
-                    <li><a href="pdf/apbc2018.pdf">Poster</a> (Presented at APBC 2018)</li>
-                  </ul>
-                  <figure class="image">
-                    <img src="figure/last-split-pe.png" alt="LAST-SPLIT-PE">
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
+        <h3 class="title is-4 is-spaced">Education</h3>
+        <div class="content">
+        <ul>
+          <li><strong>University of Toronto</strong> (2020 - present), Doctor of Philosophy (Department of Computer Science)</li>
+          <li><strong>The University of Tokyo</strong> (2018 - 2020), Master of Science (Department of Computational Biology and Medical Sciences)</li>
+          <li><strong>The University of Tokyo</strong> (2014 - 2018), Bachelor of Science (Department of Bioinformatics and Systems Biology)</li>
+        </ul>
         </div>
         <hr>
         <h3 class="title is-4 is-spaced">Publications</h3>
